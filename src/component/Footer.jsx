@@ -10,11 +10,7 @@ const Footer = () => {
         <div className="container">
           <div className=" row py-4 d-flex flex-row-reverse align-items-center justify-content-center justify-content-md-between flex-wrap">
             <div className="col-md-3 col-sm-12 col-lg-3 copyright d-flex flex-column text-center justify-content-center align-items-center    pb-3 pb-md-0">
-              <img
-                src={logo}
-                style={{ width: "50px", borderRadius: "50px" }}
-                alt=""
-              />
+          
               <p className="mt-3">
                 جميع الحقوق محفوظة gمنصة الأمين لتعليم القرآن © 2024
               </p>
@@ -25,6 +21,11 @@ const Footer = () => {
               الرياض، حي العزيزية طريق الملك عبدالله
             </p> */}
               <p className="mt-3">
+              <img
+                src={logo}
+                style={{ width: "50px", borderRadius: "50px" }}
+                alt=""
+              />
                 {/* <CiMobile1 />
                 49-15758088973+ */}
               </p>

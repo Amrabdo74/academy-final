@@ -1,4 +1,7 @@
-import logo from "../Images/logo.jpg";
+import logo from "../Images/ايقونات-11.svg";
+import logo1 from "../Images/12.svg";
+import logo2 from "../Images/ايقونات-09.svg";
+import logo3 from "../Images/ايقونات-08.svg";
 const Solutions = () => {
   return (
     <div className=" Solutions text-center">
@@ -17,7 +20,7 @@ const Solutions = () => {
             </div>
           </div>
           <div className="card  col-lg-4 col-md-4 m-4  ">
-            <img className=" w-25  " src={logo} alt="Card image cap" />
+            <img className=" w-25  " src={logo3} alt="Card image cap" />
             <div className="card-body">
               <h6 className="card-text">
                 أقسام خاصة رجال ، نساء ، أطفال
@@ -27,7 +30,7 @@ const Solutions = () => {
             </div>
           </div>
           <div className="card  col-lg-4 col-md-4 m-4  ">
-            <img className=" w-25  " src={logo} alt="Card image cap" />
+            <img className=" w-25  " src={logo2} alt="Card image cap" />
             <div className="card-body">
               <h6 className="card-text">
                 حصص فردية مكثفة
@@ -38,7 +41,7 @@ const Solutions = () => {
             </div>
           </div>
           <div className="card  col-lg-4 col-md-4 m-4  ">
-            <img className=" w-25  " src={logo} alt="Card image cap" />
+            <img className=" w-25  " src={logo1} alt="Card image cap" />
             <div className="card-body">
               <h6 className="card-text">
                 مرونة عالية بتحديد موعد الحصص

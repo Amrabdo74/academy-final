@@ -6,16 +6,20 @@ import {
   MDBIcon,
   MDBRow,
 } from "mdb-react-ui-kit";
-import imgTost from "../Images/logo.jpg";
+import imgTost from "../Images/ايقونات-04.svg";
+import imgTost1 from "../Images/ايقونات-03.svg";
+import imgTost2 from "../Images/ايقونات-07.svg";
+import imgTost3 from "../Images/ايقونات-05.svg";
+import imgTost4 from "../Images/ايقونات-06.svg";
 const Whyus = () => {
   return (
     <div className="Whyus" id="why">
       <MDBContainer className="container ">
-        <h2>لماذا تختار منصة الأمين </h2>
+        <h2 className="mb-5">لماذا تختار منصة الأمين </h2>
         <MDBCarousel showControls dark>
           <MDBCarouselItem className="active ">
-            <MDBRow className="d-flex ">
-              <MDBCol lg="9" className="Whyus-sections d-flex ">
+            <MDBRow >
+              <MDBCol lg="9" className="Whyus-sections d-flex flex-column-reverse   text-center ">
                 <div>
                   <h5 className="mb-3">معلمين ومعلمات معتمدين: </h5>
                   <p className="text-muted">
@@ -25,15 +29,15 @@ const Whyus = () => {
                     الوصول إليهم في أي وقت يناسبكم
                   </p>
                 </div>
-                <img src={imgTost} alt="" style={{ width: "120px" }} />
+                <img src={imgTost1} className="ro" alt="" style={{ width: "120px" }} />
               </MDBCol>
             </MDBRow>
           </MDBCarouselItem>
 
-          <MDBCarouselItem className="  ">
-            <MDBRow className="d-flex   ">
-              <MDBCol lg="9" className="Whyus-sections d-flex ">
-                <div>
+          <MDBCarouselItem >
+            <MDBRow >
+              <MDBCol lg="9" className="Whyus-sections d-flex flex-column-reverse text-center ">
+                <div >
                   <h5 className="mb-3">
                     تطبيقات تعلم اللغة العربية والقرآن الكريم :
                   </h5>
@@ -48,9 +52,9 @@ const Whyus = () => {
             </MDBRow>
           </MDBCarouselItem>
 
-          <MDBCarouselItem className="">
-            <MDBRow className="d-flex ">
-              <MDBCol lg="9" className="Whyus-sections d-flex ">
+          <MDBCarouselItem >
+            <MDBRow >
+              <MDBCol lg="9" className="Whyus-sections d-flex flex-column-reverse  text-center  ">
                 <div>
                   <h5 className="mb-3">موارد تعليمية شاملة: </h5>
                   <p className="text-muted">
@@ -60,13 +64,14 @@ const Whyus = () => {
                     متابعة تقدمكم.{" "}
                   </p>
                 </div>
-                <img src={imgTost} alt="" style={{ width: "120px" }} />
+                <img className="rounded " src={imgTost3} alt="" style={{ width: "120px" }} />
               </MDBCol>
             </MDBRow>
           </MDBCarouselItem>
-          <MDBCarouselItem className="">
-            <MDBRow className="d-flex ">
-              <MDBCol lg="9" className="Whyus-sections d-flex ">
+
+          <MDBCarouselItem >
+            <MDBRow >
+              <MDBCol lg="9" className="Whyus-sections d-flex  flex-column-reverse text-center ">
                 <div>
                   <h5 className="mb-3">مجتمع داعم : </h5>
                   <p className="text-muted">
@@ -76,13 +81,14 @@ const Whyus = () => {
                     والقرآن.{" "}
                   </p>
                 </div>
-                <img src={imgTost} alt="" style={{ width: "120px" }} />
+                <img src={imgTost2} className="rounded " alt="" style={{ width: "120px" }} />
               </MDBCol>
             </MDBRow>
           </MDBCarouselItem>
-          <MDBCarouselItem className="">
-            <MDBRow className="d-flex ">
-              <MDBCol lg="9" className="Whyus-sections d-flex ">
+
+          <MDBCarouselItem >
+            <MDBRow >
+              <MDBCol lg="9" className="Whyus-sections d-flex  flex-column-reverse text-center ">
                 <div>
                   <h5 className="mb-3">جدول زمني مرن: </h5>
                   <p className="text-muted">
@@ -91,11 +97,13 @@ const Whyus = () => {
                     جدولكم الزمني بناءً على الالتزامات اليومية.{" "}
                   </p>
                 </div>
-                <img src={imgTost} alt="" style={{ width: "120px" }} />
+                <img className="rounded " src={imgTost4} alt="" style={{ width: "120px" }} />
               </MDBCol>
             </MDBRow>
           </MDBCarouselItem>
+
         </MDBCarousel>
+
       </MDBContainer>
     </div>
   );

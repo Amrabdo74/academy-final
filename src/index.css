@@ -572,3 +572,49 @@ footer .copyright p {
 #why {
   padding-top: 80px !important;
 }
+.Whyus-sections img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  
+  .Whyus-sections {
+    flex-direction: column-reverse;
+  /* display: none !important; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  }
+  .Whyus-sections {
+    width: 90% !important;
+    padding: 30px;
+    padding-left:10px !important;
+    padding-right: 10px !important;
+  }
+  .Whyus-sections h3 {
+    font-size: 18px !important;
+  }
+  .whats-app {
+    display: none;
+  }
+  .left-phone {
+    display: none;
+  }
+  .face-book {
+    display: none;
+  }
+}
+.accordion-body {
+  text-align: right;
+  background-color: #bfac80;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow:none !important;
+
+}
+.accordion-button:focus {
+  box-shadow:none !important;
+}

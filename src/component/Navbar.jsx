@@ -91,7 +91,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className=" nav-link active scrollto" href="#why">
-              لماذا تختارنا
+                لماذا تختارنا
               </a>
             </li>
             <li className="nav-item">
@@ -101,7 +101,8 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link scrollto" href="#contact">
-توصل معانا              </a>
+                توصل معانا
+              </a>
             </li>
             <li className="nav-item">
               <a className="login scrollto" href="#">
