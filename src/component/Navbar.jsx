@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import logo from "../Images/logo.jpg";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
+
 const Navbar = () => {
+  const [expanded, setExpanded] = useState(true);
   useEffect(() => {
     let mainContent = document.getElementById("main-content");
     if (mainContent) {
@@ -53,15 +55,16 @@ const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded={true}
           aria-label="Toggle navigation"
+          onClick={()=>setExpanded(false)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse hide  "
+          className={`collapse navbar-collapse ${expanded ? 'hide':'show'} ` }
           id="navbarSupportedContent"
         >
           <ul className=" nav-item d-flex  justify-content-center navbar-nav  mx-auto  ">
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>setExpanded(true)}>
               <a
                 className=" nav-link active scrollto"
                 onClick={(e) => {
@@ -74,37 +77,37 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>setExpanded(true)}>
               <a className=" nav-link active scrollto" href="#who">
                 من نحن
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>setExpanded(true)}>
               <a className=" nav-link active scrollto" href="#service">
                 خدماتنا
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>setExpanded(true)}>
               <a className=" nav-link active scrollto" href="#course">
                 دورات
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>setExpanded(true)}>
               <a className=" nav-link active scrollto" href="#why">
                 لماذا تختارنا
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>setExpanded(true)}>
               <a className="nav-link scrollto" href="#questions">
                 الأسئلة الشائعة
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>setExpanded(true)}>
               <a className="nav-link scrollto" href="#contact">
                 توصل معانا
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>setExpanded(true)}>
               <a className="login scrollto" href="#">
                 تسجيل الدخول
               </a>

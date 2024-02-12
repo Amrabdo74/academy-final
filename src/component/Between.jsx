@@ -1,9 +1,9 @@
 
-import betweenImage from '../Images/between.jpg'
+import betweenImage from '../Images/panner2.pdf.svg'
 const Between = () => {
   return (
-    <div>
-      <img src={betweenImage} alt="" />
+    <div className='w-75 mx-auto '>
+      <img  src={betweenImage} alt="" />
     </div>
   )
 }
